@@ -21,9 +21,9 @@ jobs:
 
     - name: Angular Full CI
       uses: colbyhill21/angular-full-ci@v1.0
-      with:
+      #with:
         # Command to run tests on your project, do not prepend with "npm", it is already included.
-        testcommand: test
+        #testcommand: test
         
     - name: Publish to GitHub Pages
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
