@@ -46,8 +46,8 @@ jobs:
         # The name of the directory that containing the content to be published
         dir: /dist/braydonharris
         # The name of the remote branch that publishing source for GitHub Pages site
-        #branch: # optional, default is gh-pages
+        branch: master
         # The remote repository that publishing source for GitHub Pages site, defaults to current repo and is formatted like 'user/repo-name'
         #repo: # optional
         # The personal access token that authorize repo access
-        #token: 
+        token: ${{ secrets.ACCESS_TOKEN}} 
