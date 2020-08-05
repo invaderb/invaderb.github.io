@@ -39,15 +39,20 @@ jobs:
       run: |
         npm ci
         npm run build:ci
-        
-    - name: Publish to GitHub Pages
-      uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        # The name of the directory that containing the content to be published
-        dir: /dist/braydonharris
-        # The name of the remote branch that publishing source for GitHub Pages site
-        branch: master
-        # The remote repository that publishing source for GitHub Pages site, defaults to current repo and is formatted like 'user/repo-name'
-        #repo: # optional
-        # The personal access token that authorize repo access
-        token: ${{ secrets.ACCESS_TOKEN}} 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist/braydonharris  
+    # - name: Publish to GitHub Pages
+    #   uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
+    #   with:
+    #     # The name of the directory that containing the content to be published
+    #     dir: dist/braydonharris
+    #     # The name of the remote branch that publishing source for GitHub Pages site
+    #     branch: master
+    #     # The remote repository that publishing source for GitHub Pages site, defaults to current repo and is formatted like 'user/repo-name'
+    #     #repo: # optional
+    #     # The personal access token that authorize repo access
+    #     token: ${{ secrets.ACCESS_TOKEN}} 
