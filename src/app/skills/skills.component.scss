@@ -1,5 +1,4 @@
 .skills {
-    min-height: 600px;
     color: #EEEEEE;
     h4 {
         margin-bottom: 0 !important;
@@ -45,5 +44,11 @@
     }
     .fa-adobe {
         color: #f00;
+    }
+}
+
+.hover-animate {
+    &:hover {
+        transform: scale(1.2);
     }
 }

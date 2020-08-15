@@ -10,9 +10,7 @@ declare let tsParticles: any;
 export class AppComponent implements OnInit, AfterContentInit {
   title = 'Braydon Harris';
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 
   ngAfterContentInit(): void {
     this.initParticles();

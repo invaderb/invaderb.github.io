@@ -28,21 +28,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 TODO: 
-- finish tech section
-- - animated icons
-- finish contact section 
-- - add links
-- finish about section
-- - add links
-- final desing touches negative spacing, animations, mobile/responsive
+- final desing touches negative spacing, animations
 - fix portfolio images
 - themeing
 - - finsih palettes
 - - implement high contrast
 http://mcg.mbitson.com/#!?mcgpalette0=%231b2735&mcgpalette1=%23707070&mcgpalette2=%23eeeeee&mcgpalette3=%23090a0f&mcgpalette4=%23395ab5
-
-- finish CICD
-https://travis-ci.com/getting_started
 
 - implement blog
 - - loading spinner

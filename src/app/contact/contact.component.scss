@@ -2,10 +2,6 @@
     min-height: 350px;
     color:#EEEEEE;
     text-align: left;
-    &-wrapper{
-        width: 50%;
-        margin: 0 auto;
-    }
     ul {
         list-style: none;
         & li {
@@ -36,13 +32,10 @@
 
 #satellite-orbit {
     /* For Section #2 */
-    position: relative;
-    top: 70px;
-    left: 50%;
+    position: absolute;
+    top: -5px;
     width: 150px;
     height: 150px;
-    margin-top: -210px;
-    margin-left: -140px;
 
   -webkit-animation: spin-left 12s linear infinite;
     -moz-animation: spin-left 12s linear infinite;

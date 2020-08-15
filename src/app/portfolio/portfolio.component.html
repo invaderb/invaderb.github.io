@@ -1,5 +1,6 @@
 <div class="skewedBoxRight"></div>
 <div class="content">
+    <a name="portfolio" class="display--none"></a>
     <div class="portfolio container" fxLayout="row" fxLayoutAlign="center center">
         <div fxFlex>
             <div>
@@ -8,7 +9,7 @@
                 <button mat-flat-button color="primary" type="button" data-filter=".game" class="margin-right--10">Game</button>
                 <button mat-flat-button color="primary" type="button" data-filter=".music" class="margin-right--10">Music</button>
             </div>
-            <div id="portfoliolist">
+            <div id="portfoliolist" class="margin-bottom--30">
                 <div class="target">
                     <div *ngFor="let item of items" class="mix portfolio-item" [ngClass]="item.tags[0]">
                         <div class="portfolio-wrapper">

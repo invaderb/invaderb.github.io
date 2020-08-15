@@ -12,7 +12,9 @@
     html, body { height: 100%; margin: 0; }
 
     html {
-        background: radial-gradient(ellipse at bottom, $main-blue 0%, $main-dark 100%);
+        background: radial-gradient(ellipse at bottom, $main-blue 0%, $main-dark 100vh, $main-dark);
+        background-repeat: no-repeat;
+        background-color: #182029;
     }
 
     h1{
@@ -23,7 +25,7 @@
         color: $main-light;
     }
 
-    p,li,a {
+    p,li,a, svg {
         font-family: "Helvetica";
         font-size: 14px;
         color: $main-light;
@@ -32,7 +34,10 @@
         padding: 0;
         margin: 0;
     }
-
+    button {
+        background: transparent;
+        border: none;
+    }
     .logo {
         display: inline-flex;
         &_svg{
@@ -49,6 +54,7 @@
 
     .content {
         background-color: $background;
+        padding: 0 20px 0 20px;
     }
     .skewedBoxRight {
         background: $background;
