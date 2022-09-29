@@ -1,19 +1,26 @@
-.section {
-    height: 100vh;
+.heading-spacer {
+	height: 150px;
 }
 
-.about {
-    height: 500px;
+.section {
+	height: 83vh;
+	min-height: 500px;
+}
 
-    ul {
-        list-style: none;
-        & li {
-            display: inline;
-            padding: 0 32px 0 0;
-            & svg{
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
+.personal-links {
+	list-style: none;
+	display: flex;
+	gap: 24px;
+	& svg {
+		fill: #fff;
+		width: 50px;
+		height: 50px;
+	}
+}
+.about {
+	min-height: 500px;
+}
+
+.profile {
+	width: 15em;
 }

@@ -1,16 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+	selector: 'app-navigation',
+	templateUrl: './navigation.component.html',
+	styleUrls: ['./navigation.component.scss'],
 })
-export class NavigationComponent implements OnInit {
-  @Input() display = 'inline-flex';
+export class NavigationComponent{
+	@Input() display = 'inline-flex';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	constructor() {}
 }

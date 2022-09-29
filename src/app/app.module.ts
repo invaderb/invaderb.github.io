@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -18,26 +18,26 @@ import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContactComponent,
-    PortfolioComponent,
-    SkillsComponent,
-    AboutComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavigationComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    MatButtonModule,
-    MatSidenavModule,
-    AppRoutingModule,
-    FlexLayoutModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		ContactComponent,
+		PortfolioComponent,
+		SkillsComponent,
+		AboutComponent,
+		HeaderComponent,
+		FooterComponent,
+		NavigationComponent,
+	],
+	imports: [
+		BrowserModule,
+		HttpClientModule,
+		MatButtonModule,
+		MatSidenavModule,
+		AppRoutingModule,
+		FlexLayoutModule,
+		BrowserAnimationsModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

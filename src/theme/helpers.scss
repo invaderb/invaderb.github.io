@@ -42,3 +42,16 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 .spacer {
   height: 130px;
 }
+
+.flex {
+	display: flex;
+	&-space-between{
+		justify-content: space-between;
+	}
+	&-space-around{
+		justify-content: space-around;
+	}
+	&-wrap{
+		flex-wrap: wrap;
+	}
+}
