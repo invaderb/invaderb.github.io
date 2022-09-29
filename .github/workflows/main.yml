@@ -39,7 +39,7 @@ jobs:
 
     - name: npm ci and npm run build
       run: |
-        npm i
+        npm ci
         npm run build:ci
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
